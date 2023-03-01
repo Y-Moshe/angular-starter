@@ -1,0 +1,39 @@
+<section>
+  <form [formGroup]="loginForm" (ngSubmit)="handleSubmit($event)">
+    <!-- E-Mail -->
+    <div class="form-control">
+      <label for="email">E-Mail</label>
+      <input type="email" id="email" formControlName="email" class="w-100" />
+
+      <!-- Errors -->
+      <small *ngIf="hasError('email', 'required')" class="error-block"
+        >email is required!</small>
+      <small *ngIf="hasError('email', 'email')" class="error-block"
+        >Invalid email address!</small>
+    </div>
+
+    <!-- Password -->
+    <div class="form-control">
+      <label for="password">Password</label>
+      <input
+        type="password"
+        id="password"
+        formControlName="password"
+        class="w-100"
+      />
+
+      <!-- Errors -->
+      <small *ngIf="hasError('password', 'required')" class="error-block"
+        >Password is required!</small>
+      <small *ngIf="hasError('password', 'minlength')" class="error-block"
+        >At least 6 characters are required!</small>
+    </div>
+
+    <button
+      type="submit"
+      [disabled]="loginForm.invalid || (isSubmitting$ | ngrxPush)"
+    >
+      Log-In
+    </button>
+  </form>
+</section>

@@ -1,27 +1,35 @@
-# AngularStarter
+Project generated using `ng new command with routing and scss` configuration selected.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.4.
+## Added Package list
 
-## Development server
+- @ngrx/component
+- @ngrx/effects
+- @ngrx/store
+- "bootstrap (just the grid system) in styles.css `@import 'bootstrap/scss/bootstrap-grid.scss';`
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## .prettierrc
 
-## Code scaffolding
+```
+{
+  "tabWidth": 2,
+  "useTabs": false,
+  "semi": false,
+  "singleQuote": true
+}
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+And `craco.config.js` created to paths defined below
 
-## Build
+## tsconfig.json paths
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```
+  "baseUrl": "./", // default
+  "paths": {
+    "@types": ["src/app/types"],
+    "@services": ["src/app/services"],
+    "@store": ["src/app/store"]
+  }
+```
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Styles
+All components styles are structured to be at the `src/app/styles` directory instead in each component directory

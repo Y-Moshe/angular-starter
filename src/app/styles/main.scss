@@ -1,0 +1,18 @@
+// Setup
+@import 'setup/variables.scss';
+@import 'setup/functions.scss';
+@import 'setup/typography.scss';
+
+// Basics
+@import 'basics/helpers';
+@import 'basics/layout';
+@import 'basics/base';
+// Components
+@import 'components/e404.component';
+@import 'components/header.component';
+@import 'components/footer.component';
+
+// Views
+@import 'views/home.component';
+@import 'views/login.component';
+@import 'views/signup.component';

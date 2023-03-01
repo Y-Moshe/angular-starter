@@ -1,0 +1,29 @@
+<header class="main-header main-layout full">
+  <nav class="main-nav">
+    <div routerLink="/" class="brand">BrandLogo</div>
+
+    <span *ngIf="user$ | ngrxPush as user; else authLinks">
+      <ul class="clean-list d-flex gap-10">
+        <li>
+          <span>{{ user.email }}</span>
+        </li>
+        <li>
+          <button
+            type="button"
+            [disabled]="(isLoggingOut$ | ngrxPush)"
+            (click)="handleLogout()"
+          >
+            Logout
+          </button>
+        </li>
+      </ul>
+    </span>
+
+    <ng-template #authLinks>
+      <ul class="clean-list d-flex gap-10">
+        <li routerLink="/auth/login">Log-in</li>
+        <li routerLink="/auth/signup">Sign-up</li>
+      </ul>
+    </ng-template>
+  </nav>
+</header>
