@@ -5,7 +5,7 @@ Project generated using `ng new command with routing and scss` configuration sel
 - @ngrx/component
 - @ngrx/effects
 - @ngrx/store
-- "bootstrap (just the grid system) in styles.css `@import 'bootstrap/scss/bootstrap-grid.scss';`
+- bootstrap (just the grid system) in styles.css `@import 'bootstrap/scss/bootstrap-grid.scss';`
 
 ## .prettierrc
 
