@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core'
 import { Store } from '@ngrx/store'
-import { actions, IAppStore } from '@store'
+import { actions, IAppStore } from '@/store'
 
 @Component({
   selector: 'app-root',

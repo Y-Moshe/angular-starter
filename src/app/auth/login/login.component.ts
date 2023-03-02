@@ -5,7 +5,7 @@ import { Store } from '@ngrx/store'
 import { Router } from '@angular/router'
 import { Observable, Subscription } from 'rxjs'
 
-import { IAppStore, actions, selectors } from '@store'
+import { IAppStore, actions, selectors } from '@/store'
 
 @Component({
   selector: 'app-login',

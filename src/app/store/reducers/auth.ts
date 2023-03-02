@@ -1,5 +1,5 @@
 import { createReducer, on } from '@ngrx/store'
-import { IUser } from '@types'
+import { IUser } from '@/types'
 import ACTIONS from '../actions/auth'
 
 export interface IAuthState {

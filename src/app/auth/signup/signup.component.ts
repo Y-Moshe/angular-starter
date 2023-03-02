@@ -9,7 +9,7 @@ import { Actions, ofType } from '@ngrx/effects'
 import { Router } from '@angular/router'
 import { Observable, Subscription } from 'rxjs'
 
-import { IAppStore, actions, selectors } from '@store'
+import { IAppStore, actions, selectors } from '@/store'
 
 @Component({
   selector: 'app-login',

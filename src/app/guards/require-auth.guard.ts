@@ -6,7 +6,7 @@ import {
   UrlTree,
 } from '@angular/router'
 import { Store } from '@ngrx/store'
-import { IAppStore, selectors } from '@store'
+import { IAppStore, selectors } from '@/store'
 import { map, Observable } from 'rxjs'
 
 @Injectable({

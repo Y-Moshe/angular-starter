@@ -2,8 +2,8 @@ import { Injectable } from '@angular/core'
 import { HttpClient } from '@angular/common/http'
 import { Observable } from 'rxjs'
 
-import { storageService } from '@services'
-import { ILoginResponse, IAuthToken, IUser } from '@types'
+import { storageService } from '@/services'
+import { ILoginResponse, IAuthToken, IUser } from '@/types'
 import { environment } from '../../environments/environment'
 
 const STORAGE_KEY = 'authToken'

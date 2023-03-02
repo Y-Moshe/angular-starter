@@ -1,11 +1,11 @@
-import { Component, OnDestroy, OnInit, ViewEncapsulation } from '@angular/core'
+import { Component, OnDestroy, OnInit } from '@angular/core'
 import { Observable, Subscription } from 'rxjs'
 import { Actions, ofType } from '@ngrx/effects'
 import { Router } from '@angular/router'
 import { Store } from '@ngrx/store'
 
-import { IAppStore, actions, selectors } from '@store'
-import { IUser } from '@types'
+import { IAppStore, actions, selectors } from '@/store'
+import { IUser } from '@/types'
 
 @Component({
   selector: 'app-header',

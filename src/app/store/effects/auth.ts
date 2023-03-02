@@ -4,7 +4,7 @@ import { EMPTY, of } from 'rxjs'
 import { map, mergeMap, catchError } from 'rxjs/operators'
 
 import ACTIONS from '../actions/auth'
-import { AuthService } from '@services'
+import { AuthService } from '@/services'
 
 @Injectable()
 export class AuthEffects {

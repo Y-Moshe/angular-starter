@@ -1,5 +1,5 @@
 import { createActionGroup, props, emptyProps } from '@ngrx/store'
-import { IBaseErrorResponse, ILoginResponse, IUser, ICredentials } from '@types'
+import { IBaseErrorResponse, ILoginResponse, IUser, ICredentials } from '@/types'
 
 export default createActionGroup({
   source: 'Auth API',
