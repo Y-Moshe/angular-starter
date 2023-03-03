@@ -18,16 +18,12 @@ Project generated using `ng new command with routing and scss` configuration sel
 }
 ```
 
-And `craco.config.js` created to paths defined below
-
 ## tsconfig.json paths
 
 ```
   "baseUrl": "./", // default
   "paths": {
-    "@types": ["src/app/types"],
-    "@services": ["src/app/services"],
-    "@store": ["src/app/store"]
+    "@/*": ["./src/app/*"]
   }
 ```
 
